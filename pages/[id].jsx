@@ -1,13 +1,17 @@
 import { useRouter } from "next/router";
 
-const AnyPage = () => {
+const DynamicRoute = () => {
   const router = useRouter();
+  const query = router.query.dynamic;
+
+  console.log("query", query);
+
   return (
     <div>
       <h1>Welcome to Next.js with Ankita</h1>
-      <p>{router.query.id}</p>
+      <p>{query}</p>
     </div>
   );
 };
 
-export default AnyPage;
+export default DynamicRoute;
