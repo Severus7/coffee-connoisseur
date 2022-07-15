@@ -7,6 +7,7 @@ import Banner from "../components/banner";
 export default function Home() {
   const handleOnBannerBtnClick = () => {
     console.log("Banner Button");
+    // handleTrackLocation();
   };
 
   return (
